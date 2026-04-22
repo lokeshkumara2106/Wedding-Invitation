@@ -18,18 +18,31 @@
     }
 
     .names {
-      font-size: 2.5rem;
+      font-size: 2rem;
       color: #b76e79;
       font-weight: bold;
     }
 
+    @media (min-width: 768px) {
+      .names {
+        font-size: 2.5rem;
+      }
+    }
+
     .photo {
-      width: 200px;
-      height: 200px;
+      width: 150px;
+      height: 150px;
       object-fit: cover;
       border-radius: 50%;
       border: 5px solid #b76e79;
       transition: transform 0.3s;
+    }
+
+    @media (min-width: 768px) {
+      .photo {
+        width: 200px;
+        height: 200px;
+      }
     }
 
     .photo:hover {
@@ -49,6 +62,7 @@
       text-decoration: none;
       transition: 0.3s;
       display: inline-block;
+      font-size: 0.9rem;
     }
 
     .map-btn:hover {
@@ -59,41 +73,41 @@
 </head>
 <body>
 
-  <div class="container text-center py-5">
+  <div class="container text-center py-4 py-md-5">
 
-    <h1 class="animate__animated animate__fadeInDown">💍 Wedding Invitation</h1>
+    <h1 class="animate__animated animate__fadeInDown fs-3 fs-md-1">💍 Wedding Invitation</h1>
 
-    <div class="names my-4 animate__animated animate__zoomIn">
+    <div class="names my-3 my-md-4 animate__animated animate__zoomIn">
       Manohar ❤️ Madhu
     </div>
 
-    <div class="row justify-content-center my-4">
-      <div class="col-md-3 animate__animated animate__fadeInLeft">
-        <img src="imgg.jpg" class="photo" alt="Bride">
+    <div class="row justify-content-center my-3 my-md-4 g-4">
+      <div class="col-6 col-md-3 animate__animated animate__fadeInLeft">
+        <img src="imgg.jpg" class="photo img-fluid" alt="Bride">
         <p class="mt-2">Bride</p>
       </div>
-      <div class="col-md-3 animate__animated animate__fadeInRight">
-        <img src="imgg.jpg" class="photo" alt="Groom">
+      <div class="col-6 col-md-3 animate__animated animate__fadeInRight">
+        <img src="imgg.jpg" class="photo img-fluid" alt="Groom">
         <p class="mt-2">Groom</p>
       </div>
     </div>
 
-    <div class="card card-custom p-4 mx-auto animate__animated animate__fadeInUp" style="max-width: 600px;">
+    <div class="card card-custom p-3 p-md-4 mx-auto animate__animated animate__fadeInUp" style="max-width: 600px;">
 
-      <h4 class="text-danger">Wedding Ceremony</h4>
-      <p><strong>Date:</strong> 10th December 2026</p>
+      <h5 class="text-danger">Wedding Ceremony</h5>
+      <p class="mb-1"><strong>Date:</strong> 10th December 2026</p>
       <p><strong>Time:</strong> 9:00 AM - 11:00 AM</p>
 
       <hr>
 
-      <h4 class="text-danger">Reception</h4>
-      <p><strong>Date:</strong> 10th December 2026</p>
+      <h5 class="text-danger">Reception</h5>
+      <p class="mb-1"><strong>Date:</strong> 10th December 2026</p>
       <p><strong>Time:</strong> 6:00 PM - 9:00 PM</p>
 
       <hr>
 
-      <h4 class="text-danger">Venue</h4>
-      <p>Grand Palace Hall</p>
+      <h5 class="text-danger">Venue</h5>
+      <p class="mb-1">Grand Palace Hall</p>
       <p>Chennai, Tamil Nadu</p>
 
       <a href="https://maps.app.goo.gl/gFKrJUS3aWJs9PNo8?g_st=iw" target="_blank" class="map-btn mt-3">
